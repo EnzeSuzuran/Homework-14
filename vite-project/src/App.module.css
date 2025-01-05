@@ -1,0 +1,51 @@
+:root {
+    --bg-primary: #000000;
+    --bg-secondary: #111111;
+    --text-primary: #ffffff;
+    --text-secondary: #888888;
+    --accent: #6C5CE7;
+    --font-heading: 'Space Grotesk', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+  
+  /* Global styles */
+  .app {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+  }
+  
+  /* Common button styles */
+  .button {
+    background-color: var(--accent);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .button:hover {
+    transform: translateY(-2px);
+  }
+  
+  /* Grid layouts */
+  .grid {
+    display: grid;
+    gap: 2rem;
+  }
+  
+  /* Image hover effects */
+  .imageWrapper {
+    overflow: hidden;
+  }
+  
+  .imageWrapper img {
+    transition: transform 0.3s;
+  }
+  
+  .imageWrapper:hover img {
+    transform: scale(1.05);
+  }

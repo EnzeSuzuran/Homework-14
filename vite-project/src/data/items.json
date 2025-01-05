@@ -1,0 +1,12 @@
+{
+  "item": [
+    { "id": 1, "label": "tattoo artist" },
+    { "id": 2, "label": "frontend developer" },
+    { "id": 3, "label": "print finisher" },
+    { "id": 4, "label": "designer" },
+    { "id": 5, "label": "artist" },
+    { "id": 6, "label": "handmade" },
+    { "id": 7, "label": "tattoo artist" },
+    { "id": 8, "label": "frontend developer" }
+  ]
+}
