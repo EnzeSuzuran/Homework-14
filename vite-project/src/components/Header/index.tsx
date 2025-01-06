@@ -1,10 +1,11 @@
 import styles from './Header.module.css';
+import SwitchTheme from '../SwitchTheme';
 
 const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
-        <span>{'ENZE'}</span>
+        <SwitchTheme/>
       </div>
       <div className={styles.navContainer}>
         <nav className={styles.nav}>

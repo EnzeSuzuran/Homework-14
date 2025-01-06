@@ -1,83 +1,69 @@
 .projects {
-    padding: 4rem 2rem;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 125px;
+  padding: 30px;
+  width: 100%;
+  max-width: 1600px;
+}
+
+.projects h2 {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.projects p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: var(--grey-40);
+}
+
+.grid {
+  display: flex;
+  gap: 40px;
+}
+
+.card {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.blurredImage {
+  width: 100%;
+  height: auto;
+  filter: blur(10px);
+  transition: filter 0.3s ease; /* плавный переход при наведении */
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .projects {
+  max-width: 750px;
   }
-  
-  .projects h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
-  }
-  
-  .card {
-    background: var(--card-bg);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .imageContainer {
-    position: relative;
-    padding-top: 60%;
-  }
-  
-  .imageContainer img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .content {
-    padding: 1.5rem;
-  }
-  
-  .content h3 {
-    margin-bottom: 1rem;
-  }
-  
-  .techStack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin: 1rem 0;
-  }
-  
-  .techStack span {
-    background: var(--tag-bg);
-    padding: 0.25rem 0.75rem;
-    border-radius: 16px;
-    font-size: 0.875rem;
-  }
-  
-  .links {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-top: 1.5rem;
-  }
-  
-  .links a {
-    padding: 0.5rem 1rem;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    transition: all 0.3s ease;
-  }
-  
-  .links a:hover {
-    background: var(--primary);
-    color: white;
-    border-color: var(--primary);
-  }
+}

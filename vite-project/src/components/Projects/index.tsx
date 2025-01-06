@@ -1,34 +1,22 @@
 import styles from './Projects.module.css';
-import projectsData from '../../data/projects.json';
-import { Project } from '../../types';
 
 const Projects = () => {
+  const placeholderProjects = [
+    { id: 1, title: 'Project 1', image: 'src/assets/images/projects/1.jpg' },
+    { id: 2, title: 'Project 2', image: 'src/assets/images/projects/2.jpg' },
+    { id: 3, title: 'Project 3', image: 'src/assets/images/projects/3.jpg' },
+  ];
+
   return (
     <section className={styles.projects} id="projects">
       <h2>Projects</h2>
-      <p>Things I've built so far</p>
+      <p>Projects I plan to undertake</p>
       <div className={styles.grid}>
-        {projectsData.projects.map((project: Project) => (
+        {placeholderProjects.map((project) => (
           <div key={project.id} className={styles.card}>
             <div className={styles.imageContainer}>
-              <img src={project.image} alt={project.title} />
-            </div>
-            <div className={styles.content}>
-              <h3>{project.title}</h3>
-              <p>{project.description}</p>
-              <div className={styles.techStack}>
-                {project.techStack.map((tech, index) => (
-                  <span key={index}>{tech}</span>
-                ))}
-              </div>
-              <div className={styles.links}>
-                <a href={project.livePreviewUrl} target="_blank" rel="noopener noreferrer">
-                  Live Preview
-                </a>
-                <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
-                  View Code
-                </a>
-              </div>
+              <img src={project.image} alt={project.title} className={styles.blurredImage} />
+              <div className={styles.overlay}>Soon</div>
             </div>
           </div>
         ))}

@@ -86,6 +86,17 @@ button {
   font: inherit;
 }
 
+
+.dark {
+  background: #000000;
+  color: #ffffff;
+}
+
+.light {
+  background: #ffa2a9;
+  color: #ffffff;
+}
+
 /* Утилитарные классы */
 .container {
   width: 100%;

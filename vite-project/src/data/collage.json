@@ -1,0 +1,9 @@
+{
+    "collageImage": [
+      { "id": 1, "src": "./src/assets/images/collage/alsoMe.jpg", "alt": "About Me" },
+      { "id": 2, "src": "./src/assets/images/collage/art.jpg", "alt": "Sketch" },
+      { "id": 3, "src": "./src/assets/images/collage/design.jpg", "alt": "Design" },
+      { "id": 4, "src": "./src/assets/images/collage/portrait.jpg", "alt": "Art" },
+      { "id": 5, "src": "./src/assets/images/collage/tattoo.jpg", "alt": "Tattoo" }
+    ]
+  }

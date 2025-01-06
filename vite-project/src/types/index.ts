@@ -22,3 +22,13 @@ export interface Item {
 export interface ItemsData {
   item: Item[];
 }
+
+export interface CollageImage {
+  id: number;
+  src: string;
+  alt: string;
+}
+
+export interface Collage {
+  images: CollageImage[];
+}
